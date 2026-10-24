@@ -39,4 +39,12 @@ traffic and certificate stay as they are.
 [Open an issue](https://github.com/wireway-dev/wireway/issues/new). Say which version you run (**Wireway > About Wireway**),
 what you did and what happened. Leave out anything private from the traffic you captured: hosts, tokens, request bodies.
 
-For anything you'd rather not post in public, write to [support@wireway.dev](mailto:support@wireway.dev).
+When something fails, a few lines from Wireway's log help a lot. It's at `~/Library/Logs/Wireway/engine.log`, with the
+run before in `engine.previous.log`. The log names your Mac's network address and the hosts you decrypt, so paste the
+lines around the problem rather than the whole file.
+
+If a HAR file or a saved session would show the problem, say so in the issue and send the file to support instead of
+attaching it: exports hide credentials, but URLs and bodies stay as you captured them.
+
+For anything you'd rather not post in public, write to [support@wireway.dev](mailto:support@wireway.dev). For security
+problems, see [SECURITY.md](SECURITY.md).
