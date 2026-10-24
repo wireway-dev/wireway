@@ -1,0 +1,55 @@
+name: Bug
+description: Something in Wireway doesn't work as it should.
+labels: [bug]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thanks for taking the time. Issues are public, so a made-up host such as `api.example.com` is best in place of
+        your real ones.
+  - type: input
+    id: version
+    attributes:
+      label: Wireway version
+      description: Wireway > About Wireway
+      placeholder: "1.5.0"
+    validations:
+      required: true
+  - type: input
+    id: macos
+    attributes:
+      label: macOS version
+      placeholder: "26.1"
+    validations:
+      required: true
+  - type: dropdown
+    id: device
+    attributes:
+      label: Traffic from
+      options:
+        - Android device
+        - Android emulator
+        - iOS device
+        - iOS Simulator
+        - The Mac
+        - Not about traffic
+  - type: textarea
+    id: what
+    attributes:
+      label: What happened
+      description: What you did, what you expected and what happened instead.
+    validations:
+      required: true
+  - type: textarea
+    id: log
+    attributes:
+      label: Log lines
+      description: |
+        Optional. A few lines from `~/Library/Logs/Wireway/engine.log` around the problem, if something failed.
+        Please not the whole file: it names your Mac's network address and the hosts you decrypt.
+      render: text
+  - type: markdown
+    attributes:
+      value: |
+        If a HAR file or a saved session would show the problem, say so here and send the file to
+        [support@wireway.dev](mailto:support@wireway.dev) instead of attaching it.
