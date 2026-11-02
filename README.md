@@ -11,10 +11,7 @@ Point an Android or iOS device, the iOS Simulator or your Mac at it, and see eve
 </p>
 
 <p align="center">
-  <picture>
-    <source media="(prefers-color-scheme: dark)" srcset="media/hero-dark.gif">
-    <img alt="Wireway listing the requests of a device's apps, then showing one request's headers and JSON body" src="media/hero-light.gif" width="900">
-  </picture>
+  <img alt="Wireway listing the requests of a device's apps, then showing one request's headers and JSON body" src="media/hero-dark.gif" width="900">
 </p>
 
 Wireway is a commercial app and its source code is not public. This repository is its public home: the
@@ -30,10 +27,7 @@ Requests and responses, grouped by device and app. JSON, protobuf, gRPC, Message
 Android each request says which app made it.
 
 <p align="center">
-  <picture>
-    <source media="(prefers-color-scheme: dark)" srcset="media/apps-dark.webp">
-    <img alt="Requests grouped under a device and its apps, with a request's headers and JSON body beside the list" src="media/apps-light.webp" width="820">
-  </picture>
+  <img alt="Requests grouped under a device and its apps, with a request's headers and JSON body beside the list" src="media/apps-dark.webp" width="820">
 </p>
 
 ### Watch WebSockets and gRPC as they happen
@@ -41,10 +35,7 @@ Android each request says which app made it.
 An open WebSocket shows its messages as they pass, and is saved when it closes. gRPC calls are in the list too.
 
 <p align="center">
-  <picture>
-    <source media="(prefers-color-scheme: dark)" srcset="media/inspect-dark.webp">
-    <img alt="An open WebSocket and a gRPC call in the request list, with the WebSocket's messages beside it" src="media/inspect-light.webp" width="820">
-  </picture>
+  <img alt="An open WebSocket and a gRPC call in the request list, with the WebSocket's messages beside it" src="media/inspect-dark.webp" width="820">
 </p>
 
 ### Change it on the way
@@ -58,10 +49,7 @@ Wireway includes an MCP server, so tools such as Claude Code and Codex can read 
 devices and add rules. Everything an agent changes is listed, and can be switched off.
 
 <p align="center">
-  <picture>
-    <source media="(prefers-color-scheme: dark)" srcset="media/agents-dark.webp">
-    <img alt="A notice that Claude Code added a rule, with a button to switch it off, over the request list" src="media/agents-light.webp" width="820">
-  </picture>
+  <img alt="A notice that Claude Code added a rule, with a button to switch it off, over the request list" src="media/agents-dark.webp" width="820">
 </p>
 
 ## Requirements
