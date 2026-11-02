@@ -19,8 +19,8 @@ Wireway is a commercial app and its source code is not public. This repository i
 
 A Mac with Apple silicon, running macOS 15 or later.
 
-Wireway is free for personal, non-commercial use, with no account or key. Any other use needs Wireway Pro, which isn't
-on sale yet.
+Wireway is free for personal, non-commercial use, with no account or key. Any other use needs
+[Wireway Pro](https://wireway.dev/pricing/).
 
 ## Install
 
