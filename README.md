@@ -1,19 +1,68 @@
-# Wireway
+<h1 align="center">Wireway</h1>
 
-Wireway is an HTTPS debugging proxy for the apps you build. Point an Android or iOS device, the iOS Simulator or your Mac
-at it, and it shows and saves every request and response, HTTPS included.
+<p align="center"><strong>An HTTPS debugging proxy for the apps you build.</strong><br>
+Point an Android or iOS device, the iOS Simulator or your Mac at it, and see every request and response, HTTPS included.</p>
+
+<p align="center">
+  <img alt="macOS 15 or later" src="https://img.shields.io/badge/macOS-15%2B-1f6feb?style=flat-square">
+  <img alt="Apple silicon" src="https://img.shields.io/badge/Apple%20silicon-arm64-555?style=flat-square">
+  <img alt="Free for personal use" src="https://img.shields.io/badge/personal%20use-free-2da44e?style=flat-square">
+  <a href="https://wireway.dev"><img alt="wireway.dev" src="https://img.shields.io/badge/website-wireway.dev-8250df?style=flat-square"></a>
+</p>
+
+<p align="center">
+  <picture>
+    <source media="(prefers-color-scheme: dark)" srcset="media/hero-dark.gif">
+    <img alt="Wireway listing the requests of a device's apps, then showing one request's headers and JSON body" src="media/hero-light.gif" width="900">
+  </picture>
+</p>
 
 Wireway is a commercial app and its source code is not public. This repository is its public home: the
 [releases](https://github.com/wireway-dev/wireway/releases) the app updates itself from and the
 [issue tracker](https://github.com/wireway-dev/wireway/issues) for bugs and ideas. The website is
 [wireway.dev](https://wireway.dev).
 
-- **See the traffic of a device's apps**: requests and responses, with JSON, protobuf, gRPC, MessagePack and images
-  shown readably, and the app that made each request on Android.
-- **Change it on the way**: map a host to another server, answer requests locally, rewrite them, pause them at a
-  breakpoint, or slow the connection down.
-- **Work with AI agents**: Wireway includes an MCP server, so tools such as Claude Code and Codex can read and search
-  the captured traffic.
+## What it does
+
+### See the traffic of each device's apps
+
+Requests and responses, grouped by device and app. JSON, protobuf, gRPC, MessagePack and images are shown readably, and on
+Android each request says which app made it.
+
+<p align="center">
+  <picture>
+    <source media="(prefers-color-scheme: dark)" srcset="media/apps-dark.webp">
+    <img alt="Requests grouped under a device and its apps, with a request's headers and JSON body beside the list" src="media/apps-light.webp" width="820">
+  </picture>
+</p>
+
+### Watch WebSockets and gRPC as they happen
+
+An open WebSocket shows its messages as they pass, and is saved when it closes. gRPC calls are in the list too.
+
+<p align="center">
+  <picture>
+    <source media="(prefers-color-scheme: dark)" srcset="media/inspect-dark.webp">
+    <img alt="An open WebSocket and a gRPC call in the request list, with the WebSocket's messages beside it" src="media/inspect-light.webp" width="820">
+  </picture>
+</p>
+
+### Change it on the way
+
+Map a host to another server, answer requests locally, rewrite them, pause them at a breakpoint, or slow the connection
+down.
+
+### Work with AI agents
+
+Wireway includes an MCP server, so tools such as Claude Code and Codex can read and search the captured traffic, set up
+devices and add rules. Everything an agent changes is listed, and can be switched off.
+
+<p align="center">
+  <picture>
+    <source media="(prefers-color-scheme: dark)" srcset="media/agents-dark.webp">
+    <img alt="A notice that Claude Code added a rule, with a button to switch it off, over the request list" src="media/agents-light.webp" width="820">
+  </picture>
+</p>
 
 ## Requirements
 
