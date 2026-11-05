@@ -61,10 +61,16 @@ Wireway is free for personal, non-commercial use, with no account or key. Any ot
 
 ## Install
 
-No build has been released yet. Once one is:
+With [Homebrew](https://brew.sh):
 
-1. Download the latest `Wireway-<version>-macos-arm64.zip` from [Releases](https://github.com/wireway-dev/wireway/releases).
-2. Open the zip and move **Wireway** to your Applications folder.
+```
+brew install --cask wireway-dev/wireway/wireway
+```
+
+Or by hand:
+
+1. Download the latest `Wireway-<version>-macos-arm64.dmg` from [Releases](https://github.com/wireway-dev/wireway/releases).
+2. Open the disk image and drag **Wireway** to your Applications folder.
 3. Open Wireway.
 
 Builds are signed with a Developer ID and notarized by Apple.
